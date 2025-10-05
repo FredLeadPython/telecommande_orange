@@ -8,7 +8,7 @@ Avant de lancer l'application, vous devez configurer l'adresse IP de votre déco
 
 1.  Ouvrez le fichier `telecommande/views.py`.
 2.  Trouvez la ligne `DECODER_IP = "192.168.1.16"`.
-3.  Remplacez `"192.168.1.50"` par l'adresse IP de votre décodeur.
+3.  Remplacez `"192.168.1.16"` par l'adresse IP de votre décodeur.
 
 ## Installation
 
@@ -33,7 +33,7 @@ Before running the application, you must configure the IP address of your Orange
 
 1.  Open the file `telecommande/views.py`.
 2.  Find the line `DECODER_IP = "192.168.1.16"`.
-3.  Replace `"192.168.1.50"` with the IP address of your decoder.
+3.  Replace `"192.168.1.16"` with the IP address of your decoder.
 
 ## Installation
 
