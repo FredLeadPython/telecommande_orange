@@ -1,0 +1,53 @@
+/* telecommande/static/telecommande/css/remote.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+    font-family: sans-serif;
+}
+
+#remote-control {
+    width: 280px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.remote-btn {
+    width: 100%;
+    padding: 15px 0;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #555;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.remote-btn:active, .remote-btn.clicked {
+    background-color: #e67e22;
+    transform: scale(0.98);
+}
+
+.grid-nav, .numpad {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.grid-nav {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.numpad {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.power { background-color: #c0392b; }
+.ok { background-color: #27ae60; }

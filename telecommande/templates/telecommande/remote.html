@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Télécommande TV Orange</title>
+    <link rel="stylesheet" href="{% static 'telecommande/css/remote.css' %}">
+</head>
+<body>
+    <div id="remote-control">
+        <header>
+            <button class="remote-btn power" data-key="116">ON/OFF</button>
+        </header>
+        <section class="grid-nav">
+            <button class="remote-btn" data-key="115">Vol+</button>
+            <button class="remote-btn nav-arrow" data-key="103">▲</button>
+            <button class="remote-btn" data-key="402">P+</button>
+            <button class="remote-btn nav-arrow" data-key="105">◀</button>
+            <button class="remote-btn ok" data-key="352">OK</button>
+            <button class="remote-btn nav-arrow" data-key="106">▶</button>
+            <button class="remote-btn" data-key="114">Vol-</button>
+            <button class="remote-btn nav-arrow" data-key="108">▼</button>
+            <button class="remote-btn" data-key="403">P-</button>
+        </section>
+        <section class="numpad">
+            <button class="remote-btn" data-key="513">1</button>
+            <button class="remote-btn" data-key="514">2</button>
+            <button class="remote-btn" data-key="515">3</button>
+            <button class="remote-btn" data-key="516">4</button>
+            <button class="remote-btn" data-key="517">5</button>
+            <button class="remote-btn" data-key="518">6</button>
+            <button class="remote-btn" data-key="519">7</button>
+            <button class="remote-btn" data-key="520">8</button>
+            <button class="remote-btn" data-key="521">9</button>
+            <button class="remote-btn back" data-key="158">Retour</button>
+            <button class="remote-btn" data-key="512">0</button>
+            <button class="remote-btn menu" data-key="139">Menu</button>
+        </section>
+    </div>
+    <script>
+        // On passe l'URL de notre vue Django au script JS
+        const sendCommandUrl = "{% url 'telecommande:send_command' %}";
+    </script>
+    <script src="{% static 'telecommande/js/main.js' %}"></script>
+</body>
+</html>
